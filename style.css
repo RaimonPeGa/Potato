@@ -9,9 +9,9 @@
   right: 0;
   bottom: 0;
   margin: auto;
+  border: thin solid grey;
+  background-color: white;
 
-  background-color: #white;
-  border: thin solid gray;
 
   z-index: -3;
 }
@@ -19,23 +19,36 @@
 .muneco {
   /* centramos verticalmente la patata */
   position: relative;
-
+  top: 10em;
   margin: 0 auto;
   /* fin centrar verticalmente la patata */
   border: thin solid green;
   background-color: #eea08a;
   height: 30em;
   width: 30em;
+  border-bottom-left-radius: 7%;
+  border-bottom-right-radius: 7%;
 
+}
+
+#pelo {
+  position: absolute;
+  height: 113px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background-color: solid black;
+  border: thin solid Black;
 }
 
 .ojos {
   position: absolute;
   height: 150px;
+  top: 7em;
   left: 0;
   right: 0;
   margin: 0 auto;
-  border: thin solid blue;
+  border: thin solid black;
 }
 
 .ojo {
@@ -129,11 +142,14 @@
   border: thin solid green;
   background-color: #eea08a;
   left: 0;
-  top: 0;
+  top: 14em;
   bottom: 0;
   right: 0;
   height: 3em;
-  width: 3em;
+  width: 12em;
   background-color: black;
+  border-top-left-radius: 100%;
+  border-top-right-radius: 100%;
+
 
 }
