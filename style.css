@@ -26,19 +26,25 @@
   background-color: #eea08a;
   height: 30em;
   width: 30em;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
   border-bottom-left-radius: 7%;
   border-bottom-right-radius: 7%;
+  z-index: 2;
 
 }
 
 #pelo {
-  position: absolute;
+  position: relative;
   height: 113px;
   left: 0;
   right: 0;
   margin: 0 auto;
-  background-color: solid black;
-  border: thin solid Black;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  background color: black;
+  border: thin solid black;
+  z-index: 1;
 }
 
 .ojos {
@@ -48,7 +54,7 @@
   left: 0;
   right: 0;
   margin: 0 auto;
-  border: thin solid black;
+  border: thin solid #eea08a;
 }
 
 .ojo {
@@ -136,20 +142,44 @@
   right: -2em;
 }
 
+#bigotes {
+  position: absolute;
+  height: 113px;
+  top: 16em;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background-color: #eea08a;
+
+}
+
 #bigote {
   position: relative;
   margin: 0 auto;
-  border: thin solid green;
-  background-color: #eea08a;
   left: 0;
-  top: 14em;
+  top: 0;
   bottom: 0;
   right: 0;
   height: 3em;
-  width: 12em;
+  width: 13em;
   background-color: black;
   border-top-left-radius: 100%;
   border-top-right-radius: 100%;
 
+}
 
+#redondabigote {
+  position: relative;
+  margin: 0 auto;
+  left: 0;
+  top: 35px;
+  bottom: 0;
+  right: 0;
+  height: 25px;
+  width: 13em;
+  background-color: #eea08a;
+  border-radius: 50%;
+
+
+  z-index: 1;
 }
