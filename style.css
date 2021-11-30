@@ -19,7 +19,7 @@
 .muneco {
   /* centramos verticalmente la patata */
   position: relative;
-  top: 10em;
+  top: 1em;
   margin: 0 auto;
   /* fin centrar verticalmente la patata */
   border: thin solid green;
@@ -42,7 +42,7 @@
   margin: 0 auto;
   border-top-left-radius: 100px;
   border-top-right-radius: 100px;
-  background color: black;
+  background-color: black;
   border: thin solid black;
   z-index: 1;
 }
@@ -182,4 +182,29 @@
 
 
   z-index: 1;
+}
+
+.cuerpo {
+  position: absolute;
+  height: 100px;
+  width: 30em;
+  border: thin solid green;
+  margin: 0 auto;
+  bottom: -100px;
+}
+
+.camisas {
+
+  position: relative;
+  margin: 0 auto;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  height: 150px;
+  width: 250px;
+  background-color: #002f00;
+  z-index: 1;
+
+
 }
