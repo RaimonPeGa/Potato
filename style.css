@@ -22,7 +22,7 @@
   top: 1em;
   margin: 0 auto;
   /* fin centrar verticalmente la patata */
-  border: thin solid green;
+  border: thin solid black;
   background-color: #eea08a;
   height: 30em;
   width: 30em;
@@ -30,7 +30,7 @@
   border-top-right-radius: 100px;
   border-bottom-left-radius: 7%;
   border-bottom-right-radius: 7%;
-  z-index: 2;
+  z-index: 1;
 
 }
 
@@ -112,35 +112,19 @@
 
 .pies {
   position: absolute;
-  height: 100px;
+  height: 35px;
+  width: 250px;
   left: 0;
   right: 0;
   margin: 0 auto;
 
   bottom: 0;
-  background-color: red;
-  border: thin solid blue;
+  background-color: #3e1c00;
+  border: thin solid black;
 
-  z-index: -1;
+  z-index: 6 ;
 }
 
-.pie {
-  position: relative;
-  width: 200px;
-  height: 100px;
-  background-color: black;
-  border: thin solid red;
-}
-
-.pie-i {
-  position: absolute;
-  left: -2em;
-}
-
-.pie-d {
-  position: absolute;
-  right: -2em;
-}
 
 .bigotes {
   position: absolute;
@@ -165,6 +149,7 @@
   background-color: black;
   border-top-left-radius: 100%;
   border-top-right-radius: 100%;
+animation: mover-bigote 5s linear 2s infinite alternate;
 
 }
 
@@ -188,7 +173,6 @@
   position: relative;
   height: 150px;
   width: 30em;
-  border: thin solid green;
   bottom: -365px;
 }
 
@@ -226,14 +210,24 @@ z-index: 10;
   height: 25px;
   margin: 0 auto;
   margin-top: 15px;
-  background-color: yellow;
-  border: thin solid black;
+  background-color: black;
+  border: thin solid red;
   bottom: 150px;
   border-radius: 50%;
   z-index: 12;
 
 
 }
+
+/* @keyframes mover-bigote {
+
+  0%   { left:0px; top:0px;}
+  25%  { left:200px; top:0px;}
+  50%  { left:200px; top:200px;}
+  75%  { left:0px; top:200px;}
+  100% { left:0px; top:0px;}
+
+}*/
 
 .brazo {
 
@@ -243,7 +237,6 @@ width: 50px;
 height: 150px;
 background-color: #002f00;
 border-color: solid black;
-
 }
 
 .brazodere {
@@ -259,7 +252,7 @@ z-index: 35;
 position: relative;
 left: 60px;
 z-index: 35;
-bottom: 420px
+bottom: 420px;
 
 }
 
@@ -274,5 +267,68 @@ height: 50px;
 width: 260px;
 background-color: #002f00;
 border-color: black;
+
+}
+
+.piernas {
+  position: relative;
+  height: 150px;
+  width: 30em;
+  bottom: -365px;
+}
+
+.pantalones {
+
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  height: 150px;
+  width: 250px;
+  background-color: #755235;
+  z-index: 1;
+
+}
+
+
+.entrepierna {
+position: relative;
+border-color: white;
+background-color: white;
+right: 0;
+top: 75px;
+width: 30px;
+height: 75px;
+margin: 0 auto;
+z-index: 10;
+border-top-right-radius: 25%;
+border-top-left-radius: 25%;
+
+}
+
+.manos {
+  position: absolute;
+  height: 35px;
+  width: 50px;
+  bottom: 0;
+  background-color: #eea08a;
+  border: thin solid black;
+
+  z-index: 40 ;
+}
+
+.mano-izq {
+
+position: absolute;
+right: 62px;
+
+}
+
+.mano-dere {
+
+position: absolute;
+left: 60px;
 
 }
