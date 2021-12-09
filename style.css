@@ -16,6 +16,15 @@
   z-index: -3;
 }
 
+.cabeza {
+  position: relative;
+  z-index: 100;
+ background-color: #eea08a;
+ border-top-left-radius: 100px;
+ border-top-right-radius: 100px;
+
+}
+
 .muneco {
   /* centramos verticalmente la patata */
   position: relative;
@@ -30,9 +39,11 @@
   border-top-right-radius: 100px;
   border-bottom-left-radius: 7%;
   border-bottom-right-radius: 7%;
-  z-index: 50;
+
 
 }
+
+
 
 .pelo {
   position: relative;
@@ -234,9 +245,8 @@ z-index: 10;
 @keyframes mover-brazos {
 
 0%  { right:0px; left:60px; bottom:420px; }
-50% { right:0px; left:50px; bottom:470px; }
-70% { right:0px; left:50px; bottom:470px; }
-100%  { right:0px; left:50px; bottom:470px; transform: rotate(90deg);}
+50% { right:0px; left:40px; bottom:450px; }
+100%  { right:0px; left:60px; bottom:470px; transform: rotate(90deg);}
 
 
 }
@@ -250,6 +260,7 @@ width: 50px;
 height: 150px;
 background-color: #002f00;
 border-color: solid black;
+z-index: -1;
 
 }
 
@@ -257,16 +268,16 @@ border-color: solid black;
 
 position: relative;
 left: 368px;
-z-index: 35;
+
 }
 
 .brazoizq {
 
 position: relative;
 left: 60px;
-z-index: 15;
+
 bottom: 420px;
-animation: mover-brazos 2s linear 3s  alternate;
+animation: mover-brazos 2s linear 3s  infinite alternate;
 
 }
 
@@ -278,7 +289,7 @@ bottom: 0;
 top: 0;
 left: 110px;
 height: 50px;
-width: 260px;
+width: 270px;
 background-color: #002f00;
 border-color: black;
 
@@ -343,5 +354,5 @@ right: 0px;
 
 position: absolute;
 left: 0px;
-animation: mover-brazos 2s linear 3s  alternate;
+animation: mover-brazos 2s linear 3s  infini alternate;
 }
