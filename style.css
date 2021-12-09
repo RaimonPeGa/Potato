@@ -30,7 +30,7 @@
   border-top-right-radius: 100px;
   border-bottom-left-radius: 7%;
   border-bottom-right-radius: 7%;
-  z-index: 1;
+  z-index: 50;
 
 }
 
@@ -149,7 +149,7 @@
   background-color: black;
   border-top-left-radius: 100%;
   border-top-right-radius: 100%;
-animation: mover-bigote 5s linear 2s infinite alternate;
+animation: mover-bigote 4s linear 3s alternate;
 
 }
 
@@ -210,8 +210,8 @@ z-index: 10;
   height: 25px;
   margin: 0 auto;
   margin-top: 15px;
-  background-color: black;
-  border: thin solid red;
+  background-color: yellow;
+  border: thin solid yellow;
   bottom: 150px;
   border-radius: 50%;
   z-index: 12;
@@ -219,15 +219,28 @@ z-index: 10;
 
 }
 
-/* @keyframes mover-bigote {
+ @keyframes mover-bigote {
 
-  0%   { left:0px; top:0px;}
-  25%  { left:200px; top:0px;}
-  50%  { left:200px; top:200px;}
-  75%  { left:0px; top:200px;}
-  100% { left:0px; top:0px;}
+  0%   { right:0px; left:0px; top:0px;}
+  15%  { right:0px; left:100px; top:0px;}
+  30%  { right:0px; left:100px; top:100px;}
+  60% { right:200px; left:-100px; top:100px;}
+  75% { right:200px; left:-100px; top:0px; }
+  100% { right:0px; left:0px; top:0px; transform: rotate(360deg);}
 
-}*/
+
+}
+
+@keyframes mover-brazos {
+
+0%  { right:0px; left:60px; bottom:420px; }
+50% { right:0px; left:50px; bottom:470px; }
+70% { right:0px; left:50px; bottom:470px; }
+100%  { right:0px; left:50px; bottom:470px; transform: rotate(90deg);}
+
+
+}
+
 
 .brazo {
 
@@ -237,6 +250,7 @@ width: 50px;
 height: 150px;
 background-color: #002f00;
 border-color: solid black;
+
 }
 
 .brazodere {
@@ -244,15 +258,15 @@ border-color: solid black;
 position: relative;
 left: 368px;
 z-index: 35;
-
 }
 
 .brazoizq {
 
 position: relative;
 left: 60px;
-z-index: 35;
+z-index: 15;
 bottom: 420px;
+animation: mover-brazos 2s linear 3s  alternate;
 
 }
 
@@ -322,13 +336,12 @@ border-top-left-radius: 25%;
 .mano-izq {
 
 position: absolute;
-right: 62px;
-
+right: 0px;
 }
 
 .mano-dere {
 
 position: absolute;
-left: 60px;
-
+left: 0px;
+animation: mover-brazos 2s linear 3s  alternate;
 }
